@@ -1,14 +1,16 @@
 ## Copyright (C) 2015 Calus Peng
 %%@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-%%@ kernel svm model implementation demo classfication problem.		       @%
+%%@ kernel SVR(Support Vector Regression) model implementation for  regression @%
+%%@ problem within 1-Demission original features space.		               @%
 %%@ this source code is only used for academic  purpose,if you want to use this@% 
 %%@ in you academic project,please cite the source <calus peng ,py79hn@163.com>@%
 %%@ or if you want to use it for business purpose, please first send a email to@%
 %%@ the author for requesting  permission,or you'll be responsible for your    @%
 %%@ Illegal action.                                                            @%
 %%                                                                             @%
-%%Author: Redmaple <py79hn@163.com>                                            @%
-%% Created: 2015-12-05                                                         @%
+%%Author: Calus Peng <py79hn@163.com>                                          @%
+%%Created: 2015-12-05                                                          @%
+%%code can be downloaded from github:https://github.com/py79hn/Machine-Learning@%
 %%@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -154,7 +156,7 @@ endfunction
 %%%%%%%%%%%%%%%
 clear;
 C =2000;
-e = 0.03;
+e = 0.001; %the larger the e value the less the support verctors
 type='rbf';
 
 datas = generateData();

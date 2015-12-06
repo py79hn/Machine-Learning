@@ -6,10 +6,10 @@
 %%@ or if you want to use it for business purpose, please first send a email to@%
 %%@ the author for requesting  permission,or you'll be responsible for your    @%
 %%@ Illegal action.                                                            @%
-%%@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-
-## Author: calus peng <py79hn@163.com>
-## Created: 2015-11-04
+%%Author: Calus Peng <py79hn@163.com>                                          @%
+%%Created: 2015-12-05                                                          @%
+%%code can be downloaded from github:https://github.com/py79hn/Machine-Learning@%
+%%@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%function to genarate the traing data,
