@@ -75,7 +75,7 @@
 	endfunction
 	
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-	%traing the kernel svm machine
+	%train kernel svm machine
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	
        function [ w,svmIndex,alpha ] = linearKerSvm (data,label,kerneltype)
@@ -91,7 +91,7 @@
 	ub = ones(length(data),1)*C;
 	x0 = rand(length(data),1);
 	OPTIONS.MaxIter = 5000;
-        EPSION = 1e-8
+      EPSION = 1e-8
 	[x,obj,info,lambda] = qp(x0,H,q,A,b,lb,ub,OPTIONS); % quardic optimization
 	svmIndex = find(abs(x)>EPSION); % the support vector index
 	alpha = x;
@@ -133,7 +133,7 @@
  	hold on;
        
 	index2 = find(abs(G)<1+1e-8);    
-	plot(X(1,index2),X(2,index2),'k.'); %separable line
+	plot(X(1,index2),X(2,index2),'ko'); %separable line
         
 %        hold on;
 %        plot(X(1,find(G<=-1)),X(2,find(G<=-1)),'b^');%negative label
@@ -146,8 +146,8 @@
       %  kerneltype = 'linear';
          kerneltype ='rbf';
 	[ data,label ] =  generateData();
-        [ w,svmIndex,alpha ] = linearKerSvm (data,label,kerneltype);
+      [ w,svmIndex,alpha ] = linearKerSvm (data,label,kerneltype);
 	plot(data(1,svmIndex),data(2,svmIndex),'ro'); %plot support vector 
 	hold on;
-        plotHyperPlane(data,label,svmIndex,alpha,kerneltype);
+      plotHyperPlane(data,label,svmIndex,alpha,kerneltype);
 	
