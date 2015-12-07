@@ -170,7 +170,7 @@ hold on;
 [svmIndex,alpha,b] = kernelSvm_regression (datas,C,e,type);
 
 
-plot(datas(ceil((svmIndex+1)/2),1),datas(ceil((svmIndex+1)/2),2),"rs","markersize",2);
+plot(datas(floor((svmIndex+1)/2),1),datas(floor((svmIndex+1)/2),2),"rs","markersize",2);
 
 Xs= datas(:,1);
 Ys = zeros(1,length(Xs));
