@@ -151,8 +151,8 @@ endfunction
 
 %%%%%%%%%%%%%%%
 clear;
-C =1000;   %level of penalty that is set to the sample whose error is exceeding the error, the larger,the more penalty
-err = 0.001; %the larger the e value the less the support verctors
+C =2000;   %level of penalty that is set to the sample whose error is exceeding the error, the larger,the more penalty
+err = 0.0001; %the larger the e value the less the support verctors
 ftype="poly";%sigmod"]; % three kernel functions : poly,rbf,sigmod
 
 hold off;
